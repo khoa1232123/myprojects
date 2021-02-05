@@ -1,0 +1,46 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+
+body {
+  background-image: url('https://i.pinimg.com/originals/cb/c2/2c/cbc22ca5a3d7568a742262639a9f6b3f.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  background: #fff;
+}
+
+* {
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+.item-note {
+  .card-body {
+    padding: 10px;
+  }
+  .text {
+    color: teal;
+  }
+  .actions {
+    opacity: 0;
+    transition: 300ms;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 10px;
+    position: absolute;
+  }
+  :hover {
+    .actions {
+      opacity: 1;
+    }
+  }
+}
